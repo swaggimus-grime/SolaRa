@@ -1,0 +1,72 @@
+@import url("https://use.typekit.net/jmk3xov.css");
+
+:root {
+    --dark-bg: rgba(15, 15, 15, 0.95);
+    --spacing: 650px;
+  
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+html, body {
+    overflow: hidden;
+}
+
+canvas {
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+
+.navbar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgb(255, 255, 255);
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.navbar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+  }
+  
+.navbar a:hover {
+  color: #f1f1f1;
+}
+
+main {
+  width: 100vw;
+  color: white;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  margin: 0px auto;
+  padding: 120px 0px;
+  
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+h1, h2, h3, blockquote {
+  font-weight: 700;
+  font-style: normal;
+}
+
+section {
+  grid-column: 2 / 8;
+  padding: 2rem;
+  background: var(--dark-bg);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing);
+} 
